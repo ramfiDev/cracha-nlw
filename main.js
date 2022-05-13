@@ -20,7 +20,7 @@ function getGitHubProfileInfos() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      pageTitle.textContent = `NLW 2021 - Crachá de ${data.name}`
+      pageTitle.textContent = `NLW Heat - Crachá de ${data.name}`
       userName.textContent = data.name
       userBio.textContent = data.bio
       userLink.href = data.html_url
